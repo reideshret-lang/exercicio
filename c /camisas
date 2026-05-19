@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int p, m, g;
+    double total;
+    
+    printf("Escreva quantas camisas foram vendidas: \n");
+    printf("Camisas Pequenas: ");
+    scanf("%d", &p);
+    printf("Camisas Medias: ");
+    scanf("%d", &m);
+    printf("Camisas Grandes: ");
+    scanf("%d", &g);
+    
+    total = ( p * 10 ) + ( m * 12 ) + ( g * 15 );
+    
+    printf("Valor arrecadado é de R$%.2lf", total);
+    
+    return 0;
+}
