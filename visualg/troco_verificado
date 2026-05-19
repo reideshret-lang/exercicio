@@ -1,0 +1,30 @@
+Algoritmo "troco verificado"
+
+Var
+
+  preco : real
+  quantidade : inteiro
+  recebido : real
+  total : real
+  troco : real
+
+Inicio
+
+  escreval("Digite o preço unitário do produto: ")
+  leia(preco)
+  escreval("Digite a quantidade comprada: ")
+  leia(quantidade)
+  escreval("Digite quanto foi recebido em dinheiro: ")
+  leia(recebido)
+  
+  total <- preco * quantidade
+  
+  Se total <= recebido entao
+    troco <- recebido - total
+    escreval("TROCO = ", troco:2:2)
+  senao
+    troco <- total - recebido
+    escreval("DINHEIRO INSUFICIENTE. FALTAM R$ ", troco:2:2, " REAIS.")
+  fimse
+
+Fimalgoritmo
