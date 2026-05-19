@@ -1,0 +1,16 @@
+Algoritmo "Soma"
+
+Var
+
+  x, y : inteiro
+
+Inicio
+
+  escreval("Digite o valor de x: ")
+  leia(x)
+  escreval("Digite o valor de y: ")
+  leia(y)
+  escreval("SOMA = ", x + y)
+
+
+Fimalgoritmo
