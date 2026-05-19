@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    double peso, preco;
+    
+    printf("Insira o peso do prato:\n");
+    scanf("%lf", &peso);
+    preco = peso * 12.00;
+    printf("O valor do prato é de R$%.2lf\n", preco);
+
+    return 0;
+}
