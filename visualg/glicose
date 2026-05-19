@@ -1,0 +1,22 @@
+Algoritmo "Glicose"
+
+Var
+
+  glicose : real
+
+Inicio
+
+   Escreval("Digite a medida da glicose: ")
+   leia(glicose)
+
+   Se glicose <= 100.0 entao
+   escreval("Classificação: Normal")
+   senão
+     se glicose <= 140.0 entao
+     escreval("Classificação: Elevado")
+     senão
+     escreval("Classificação: Diabetes")
+     fimse
+   fimse
+
+Fimalgoritmo
