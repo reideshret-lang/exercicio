@@ -1,0 +1,110 @@
+#include <stdio.h>
+
+int main()
+{
+    char nome [50];
+    int mes;
+    
+    printf("Escreva seu nome: \n");
+    scanf("%s", nome);
+    printf("---MESES DO ANO---\n");
+    printf("1- Janeiro\n");
+    printf("2- Fevereiro\n");
+    printf("3- Março\n");
+    printf("4- Abril\n");
+    printf("5- Maio\n");
+    printf("6- Junho\n");
+    printf("7- Julho\n");
+    printf("8- Agosto\n");
+    printf("9- Setembro\n");
+    printf("10- Outubro\n");
+    printf("11- Novembro\n");
+    printf("12- Dezembro\n");
+    printf("Escolha o mês que você nasceu: \n");
+    scanf("%d", &mes);
+    
+    
+    switch (mes) {
+        case 1: 
+        printf("%s, você nasceu em Janeiro.\n \n ", nome);
+        printf("---FERIADOS NACIONAIS DE JANEIRO---\n");
+        printf("1º de Janeiro: Confraternização Universal / Ano Novo.\n");
+        break;
+        
+        case 2:
+        printf("%s, você nasceu em Fevereiro.\n \n ", nome);
+        printf("---FERIADOS NACIONAIS DE FEVEREIRO---\n");
+        printf("16 e 17 de Fevereiro: Carnaval. \n");
+        printf("18 de Fevereiro: Quarta-Feira de Cinzas. \n");
+        break;
+        
+        case 3:
+        printf("%s, você nasceu em Março.\n \n ", nome);
+        printf("---FERIADOS NACIONAIS DE MARÇO---\n");
+        printf("Março de 2026 não haverá nenhum feriado nacional. \n");
+        break;
+        
+        case 4: 
+        printf("%s, você nasceu em Abril.\n \n ", nome);
+        printf("---FERIADOS NACIONAIS DE ABRIL---\n");
+        printf("3 de Abril: Sexta-Feira Santa. \n");
+        printf("21 de Abril: Tiradentes. \n");
+        break;
+        
+        case 5: 
+        printf("%s, você nasceu em Maio.\n \n ", nome);
+        printf("---FERIADOS NACIONAIS DE MAIO---\n");
+        printf("1º de Maio: Dia do trabalho. \n");
+        break;
+        
+        case 6: 
+        printf("%s, você nasceu em Junho.\n \n ", nome);
+        printf("---FERIADOS NACIONAIS DE JUNHO---\n");
+        printf("04 de Junho: Corpus Christi. \n");
+        break;
+        
+        case 7: 
+        printf("%s, você nasceu em Julho.\n \n ", nome);
+        printf("---FERIADOS NACIONAIS DE JULHO---\n");
+        printf("Julho de 2026 não haverá nenhum feriado nacional. \n");
+        break;
+        
+        case 8: 
+        printf("%s, você nasceu em Agosto.\n \n ", nome);
+        printf("---FERIADOS NACIONAIS DE AGOSTO---\n");
+        printf("Agosto de 2026 não haverá nenhum feriado nacional. \n");
+        break;
+        
+        case 9: 
+        printf("%s, você nasceu em Setembro.\n \n", nome);
+        printf("---FERIADOS NACIONAIS DE SETEMBRO---\n");
+        printf("7 de Setembro: Independencia do Brasil. \n");
+        break;
+        
+        case 10: 
+        printf("%s, você nasceu em Outubro.\n \n", nome);
+        printf("---FERIADOS DE OUTUBRO---\n");
+        printf("12 de Outubro: Nossa Senhora Aparecida / Padroeira do Brasil. \n");
+        break;
+        
+        case 11: 
+        printf("%s, você nasceu em Novembro.\n \n", nome);
+        printf("---FERIADOS DE NOVEMBRO---\n");
+        printf("2 de Novembro: Finados. \n");
+        printf("15 de Novembro: Proclamação da República. \n");
+        printf("20 de Novembro: Dia Nacional do Zumbi e da Consciência Negra. \n");
+        break;
+        
+        case 12: 
+        printf("%s, você nasceu em Dezembro. \n \n", nome);
+        printf("---FERIADOS DE DEZEMBRO---\n");
+        printf("25 de Dezembro: Natal. \n");
+        break;
+        
+        default: 
+        printf("Opção Inválida :P \n");
+    }
+    
+
+    return 0;
+}
