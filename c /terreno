@@ -1,0 +1,15 @@
+
+#include <stdio.h>
+
+int main()
+{
+    double base, altura;
+    printf("Escreva o comprimento do terreno: \n");
+    scanf("%lf", &base);
+    printf("Escreva a largura do terreno: \n");
+    scanf("%lf", &altura);
+    
+    printf("A área do terreno é: %.2lf metros quadrados\n", base * altura);
+
+    return 0;
+}
