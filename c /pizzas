@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double raio;
+    
+    printf("Insira o raio da pizza: ");
+    scanf("%lf", &raio);
+    printf("A área da sua pizza é: %.2lfcm2", 3.14 * pow(raio, 2));
+
+    return 0;
+}
