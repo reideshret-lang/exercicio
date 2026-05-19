@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    double notaP, notaS, media;
+    
+    printf("Insira a nota da primeira avaliação: ");
+    scanf("%lf", &notaP);
+    printf("Insira a nota da segunda valaiação: ");
+    scanf("%lf", &notaS); 
+    
+    if (notaP < 0 || notaP > 10) {
+        printf("Nota inválida.");
+    } else if (notaS < 0 || notaS > 10) {
+        printf("Nota inválida.");
+    } else {
+        media = (notaS + notaP) / 2;
+        if (media < 6) {
+            printf("Reprovado.");
+        } else {
+            printf("Aprovado.");
+        }
+    }
+
+    return 0;
+}
