@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int senha, usuario;
+    
+    printf("Crie uma senha numérica: ");
+    scanf("%d", &usuario);
+    printf("Digite a senha: ");
+    scanf("%d", &senha);
+    
+      while (senha != usuario) {
+        printf("Senha Incorreta. Tente Novamente!!! \n");
+        printf("Digite a senha: ");
+        scanf("%d", &senha);
+      }
+
+    return 0;
+}
