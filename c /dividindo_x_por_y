@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+
+	int N, i, X, Y;
+	float resultado;
+
+	scanf("%d", &N);
+
+	for (i = 0; i < N; i++) {
+	scanf("%d %d", &X, &Y); 
+
+	if (Y == 0) {
+	printf("divisao impossivel\n");
+	} else { 
+	resultado = (float)X / Y;
+	printf("%.1f\n", resultado); }
+	}
+
+	return 0;
+}
