@@ -1,0 +1,26 @@
+Algoritmo "menor de tres"
+
+Var
+
+  primeiro, segundo, terceiro : inteiro
+
+Inicio
+
+  escreval("Digite o primeiro valor: ")
+  leia(primeiro)
+  escreval("Digite o segundo valor: ")
+  leia(segundo)
+  escreval("Digite o terceiro valor: ")
+  leia(terceiro)
+  
+  Se (primeiro < segundo) e (primeiro < terceiro) entao
+     escreval("MENOR = ", primeiro)
+  senao
+     Se (segundo < primeiro) e (segundo < terceiro) entao
+       escreval("MENOR = ", segundo)
+     senao
+       escreval("MENOR = ", terceiro)
+     fimse
+  fimse
+  
+Fimalgoritmo
