@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main()
+{
+    double broa, pao, total, poupanca;
+    
+    printf("Insira a quantidade de broas vendidas: ");
+    scanf("%lf", &broa);
+    printf("Insira a quantidade de pães vendidos: ");
+    scanf("%lf", &pao);
+    
+    broa = broa * 1.50;
+    pao = pao * 0.12;
+    
+    total = pao + broa;
+    poupanca = total * 0.10;
+    
+    printf("Você arrecadou R$%.2lf no total, guarde R$%.2lf.", total, poupanca);
+    
+
+    return 0;
+}
