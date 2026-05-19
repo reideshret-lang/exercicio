@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, centena, dezena, uni;
+    
+    printf("Escreva um número inteiro: ");
+    scanf("%d", &num);
+    
+    centena = num / 100;
+    dezena = (num % 100) / 10;
+    uni = num % 10;
+    
+    printf("CENTENA = %d\nDEZENA = %d\nUNIDADE = %d\n", centena, dezena, uni);
+    
+    return 0;
+}
