@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+   int a, b, restoa, restob;
+   
+   scanf("%d %d", &a, &b);
+   restoa = a % b;
+   restob = b % a;
+   
+   
+   if (restoa == 0 || restob == 0) {
+       printf("Sao Multiplos\n");
+   } else {
+       printf("Nao sao Multiplos\n");
+   }
+ 
+    return 0;
+}
