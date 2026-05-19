@@ -1,0 +1,21 @@
+Algoritmo "operadora"
+
+Var
+
+   quantidade : real
+   valor : real
+
+Inicio
+
+   escreval("Digite a quantidade de minutos: ")
+   leia(quantidade)
+   
+   Se quantidade <= 100 entao
+     valor <- 50.00
+   senao
+     valor <- 50.00 + (2.00 * (quantidade - 100))
+   fimse
+
+   escreval("valor a pagar: R$ ", valor:2:2)
+
+Fimalgoritmo
