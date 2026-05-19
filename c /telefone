@@ -1,0 +1,53 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int ddd, telefone;
+    
+    printf("Insira o seu telefone: \n");
+    scanf("(%d) %d", &ddd, telefone);
+    
+    switch (ddd) {
+        case 61:
+        printf("Seu telefone é (%d)%d e e sua linha é da cidade de Brasília", ddd, telefone);
+        break;
+        
+        case 24:
+        printf("Seu telefone é (%d)%d e e sua linha é da cidade de Petrópolis", ddd, telefone);
+        break;
+        
+        case 71:
+        printf("Seu telefone é (%d)%d e e sua linha é da cidade de Salvador", ddd, telefone);
+        break;
+        
+        case 11:
+        printf("Seu telefone é (%d)%d e e sua linha é da cidade de São Paulo", ddd, telefone);
+        break;
+        
+        case 21:
+        printf("Seu telefone é (%d)%d e e sua linha é da cidade de Rio de Janeiro", ddd, telefone);
+        break;
+        
+        case 32:
+        printf("Seu telefone é (%d)%d e e sua linha é da cidade de Juiz de Fora", ddd, telefone);
+        break;
+        
+        case 19:
+        printf("Seu telefone é (%d)%d e e sua linha é da cidade de Campinas", ddd, telefone);
+        break;
+        
+        case 27:
+        printf("Seu telefone é (%d)%d e e sua linha é da cidade de Vitória", ddd, telefone);
+        break;
+        
+        case 31:
+        printf("Seu telefone é (%d)%d e e sua linha é da cidade de Belo Horizonte", ddd, telefone);
+        break;
+        
+        default:
+        printf("DDD não cadastrado");
+    }
+
+    return 0;
+}
