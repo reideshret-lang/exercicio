@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    double gasolina, litro;
+    
+    printf("Quanto você deseja colocar de gasolina?(Em R$)\n");
+    scanf("%lf", &gasolina);
+    litro = gasolina / 6.78; 
+    
+    printf("Você recarregou %.2lf litros\n", litro);
+
+    return 0;
+}
