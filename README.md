@@ -1,3 +1,3 @@
 # exercicios de pratica
 
-apenas guardando alguns exercícios que eu fiz na faculdade e etc
+Alguns exercícios que uso como prática de lógica. Majotariamente, os códigos vão ser em C, SQL e Visualg.
