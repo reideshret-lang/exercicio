@@ -1,0 +1,24 @@
+Algoritmo "Dardo"
+
+Var
+
+  distancia_a, distancia_b, distancia_c : real
+
+Inicio
+
+  escreval("Digite as três distâncias: ")
+  leia(distancia_a)
+  leia(distancia_b)
+  leia(distancia_c)
+  
+  Se (distancia_a > distancia_b) e (distancia_a > distancia_c) entao
+  escreval("MAIOR DISTANCIA = ", distancia_a:2:2)
+  Senao
+    Se (distancia_b > distancia_a) e (distancia_b > distancia_c) entao
+    escreval("MAIOR DISTANCIA = ", distancia_b:2:2)
+    Senão
+    escreval("MAIOR DISTANCIA = ", distancia_c:2:2)
+    fimse
+  Fimse
+
+Fimalgoritmo
