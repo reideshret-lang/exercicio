@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    float bma, bme, h, area;
+    
+    printf("Digite a base maior: \n");
+    scanf("%f", &bma);
+    printf("Digite a base menor: \n");
+    scanf("%f", &bme);
+    printf("Digite a altura: \n");
+    scanf("%f", &h);
+    
+    area = ((bma + bme) * h) / 2;
+    
+    printf("A área do trapézido é: %.2f", area);
+
+    return 0;
+}
