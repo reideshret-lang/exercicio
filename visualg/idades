@@ -1,0 +1,26 @@
+Algoritmo "Idades"
+
+Var
+
+  primeironome, segundonome : caractere
+  primeiraidade, segundaidade : inteiro
+  media : real
+  
+Inicio
+
+  Escreval("Dados da primeira pessoa:")
+  escreval("Nome: ")
+  leia(primeironome)
+  escreval("Idade: ")
+  leia(primeiraidade)
+  Escreval("Dados da segunda pessoa:")
+  escreval("Nome: ")
+  leia(segundonome)
+  escreval("Idade: ")
+  leia(segundaidade)
+  
+  media <- (primeiraidade + segundaidade) / 2
+  escreval("A idade média de ", primeironome, " e ", segundonome, " é de ", media:2:1, " anos.")
+
+
+Fimalgoritmo
