@@ -1,0 +1,14 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+	int seg, hrs, min, segresto;
+	scanf("%d", &seg);
+	hrs = seg / 3600;
+	min = (seg % 3600) / 60;
+	segresto = (seg % 3600) % 60;
+
+	printf("%d:%d:%d\n", hrs, min, segresto);
+ 
+    return 0;
+}
