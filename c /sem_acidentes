@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int quantidade, dia, mes, ano, aux;
+    
+    printf("Quantos dias sem acidentes?\n");
+    scanf("%d", &quantidade);
+    // 1 ano = 365
+    // 1 mes = 30
+    
+    ano = quantidade / 365;
+    aux = quantidade % 365;
+    mes = aux / 30;
+    dia = aux % 30;
+    
+    printf("Tempo sem acidentes: %d ano(s), %d mes(es) e %d dia(s)\n", ano, mes, dia);
+
+    return 0;
+}
