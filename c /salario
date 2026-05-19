@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    float salarioi, salarioa, salariof;
+    
+    printf("Escreva em R$ o seu salário: \nR$");
+    scanf("%f", &salarioi);
+    
+    salarioa = salarioi + (salarioi * 0.15);
+    salariof = salarioa - (salarioa * 0.08);
+    
+    printf("Salário inicial: R$%.2f\nSalário com acrécimo: R$%.2f\nSalário final: R$%.2f\n", salarioi, salarioa, salariof);
+
+    return 0;
+}
