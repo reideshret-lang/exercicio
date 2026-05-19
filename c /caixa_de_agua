@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.14159265358979323846
+
+int main()
+{
+    float v, r, h;
+    
+    printf("Digite o raio: \n");
+    scanf("%f", &r);
+    printf("Digite a altura \n");
+    scanf("%f", &h);
+    
+    v = PI * pow(r, 2) * h;
+    
+    printf("O volume da caixa d'agua é: %.1fcm3", v);
+
+    return 0;
+}
