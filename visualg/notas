@@ -1,0 +1,23 @@
+Algoritmo "Notas"
+
+Var
+
+  primeira, segunda, final : real
+
+Inicio
+
+  escreval("Digite a primeira nota: ")
+  leia(primeira)
+  escreval("Digite a segunda nota: ")
+  leia(segunda)
+  final <- (primeira + segunda)
+  
+  Se final >= 60.00 então
+     escreval("NOTA FINAL = ", final)
+  senao
+     escreval("NOTA FINAL = ", final)
+     escreval("REPROVAD0!!")
+  fimse
+
+
+Fimalgoritmo
