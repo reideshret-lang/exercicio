@@ -1,0 +1,3 @@
+select
+   to_char(avg(price), 'FM999999.00') as price
+from products; 
