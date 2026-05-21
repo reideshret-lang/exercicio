@@ -1,0 +1,43 @@
+Algoritmo "combustivel"
+
+Var
+
+   codigo, alcool, gasolina, diesel : inteiro
+
+Inicio
+
+   escreval("---- CODIGOS ----")
+   escreval("ALCOOL = 1")
+   escreval("GASOLINA = 2")
+   escreval("DIESEL = 3")
+   escreval("SAIR = 4")
+   escreval("  ")
+
+   escreva("Informe um código: ")
+   leia(codigo)
+
+   enquanto codigo <> 4 faca
+      se codigo = 1 entao
+         alcool <- alcool + 1
+      senao
+         se codigo = 2 entao
+            gasolina <- gasolina + 1
+         senao
+            se codigo = 3 entao
+               diesel <- diesel + 1
+            fimse
+         fimse
+      fimse
+      escreva("Informe um código: ")
+      leia(codigo)
+   fimenquanto
+
+   escreval("MUITO OBRIGADO")
+   escreval("   ")
+   escreval("---- QUANTIDADES ----")
+   escreval("Alcool: ", alcool)
+   escreval("Gasolina: ", gasolina)
+   escreval("Diesel: ", diesel)
+   escreval("   ")
+
+Fimalgoritmo
