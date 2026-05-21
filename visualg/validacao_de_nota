@@ -1,0 +1,28 @@
+Algoritmo "validacao_de_nota"
+
+Var
+
+   notaum, notadois, media : real
+
+Inicio
+
+   escreva("Digite a primeira nota: ")
+   leia(notaum)
+
+   enquanto (notaum < 0) ou (notaum > 10) faca
+      escreva("Valor invalido! Tente novamente: ")
+      leia(notaum)
+   fimenquanto
+
+   escreva("Digite a segunda nota: ")
+   leia(notadois)
+
+   enquanto (notadois < 0) ou (notadois > 10) faca
+      escreva("Valor invalido! Tente novamente: ")
+      leia(notadois)
+   fimenquanto
+
+   media <- (notaum + notadois) / 2
+   escreval("MEDIA = ", media:6:2)
+
+Fimalgoritmo
