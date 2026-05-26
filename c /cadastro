@@ -1,0 +1,38 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int opcao;
+    
+    do {
+        printf ("--- MENU --- \n\n");
+        printf("1- Cadastro\n");
+        printf("2- Consulta \n");
+        printf("3- Excluir\n");
+        printf("0- Sair\n\n");
+        
+        printf("Escolha uma opção: ");
+        scanf("%d", &opcao);
+        
+        switch (opcao){
+            case 1: 
+              printf("Opção Cadastro selecionada\n");
+              break;
+            case 2:
+              printf("Opção Consulta selecionada\n");
+              break;
+            case 3:
+              printf("Opção Excluir selecionada\n");
+              break;
+            case 0:
+              printf("Saindo....\n");
+              break;
+            default:
+              printf("Opção Invalida\n");
+        }
+    }
+       while (opcao != 0);
+
+    return 0;
+}
