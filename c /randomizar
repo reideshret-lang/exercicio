@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int i;
+    int vnum[5];
+    
+    srand(time(NULL));
+    
+    for(i=0; i<5; i++){
+    vnum[i] = rand() % 6+1;
+    }
+    
+    for(i=0; i<5; i++){
+        printf("O número foi %d\n", vnum[i]);
+    }
+    
+    return 0;
+}
