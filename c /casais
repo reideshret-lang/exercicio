@@ -1,0 +1,41 @@
+// Crie um programa em C e leia a idade de 5 casais. No vetor n1 armazene a idade das mulheres no vetor n2 armazene a idade
+// dos homens. No vetor n3 coloque o somatorio das idades do casal. Ao final, teste o resultado do vetor n3 de forma ordenada.
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int n1 [5];
+    int n2 [5];
+    int n3 [5];
+    int i, j, troca;
+    
+    for(i=0; i<5; i++){
+        printf("Casal %d \n", i+1);
+        printf("Homem: ");
+        scanf("%d", &n2[i]);
+        printf("Mulher: ");
+        scanf("%d", &n1[i]);
+    }
+    
+    for(i=0; i<5; i++){
+        n3[i] = n1[i] + n2[i];
+    }
+    
+    for(i=0; i<5; i++){
+        for(j=0; j<4-i; j++){
+            if(n3[j] < n3[j+1]){
+                troca = n3[j];
+                n3[j] = n3[j+1];
+                n3[j+1] = troca;
+            }
+        }
+    }
+    
+    for(i=0; i<5; i++){
+        printf("Casal: %d\n", n3[i]);
+    }
+
+    return 0;
+}
