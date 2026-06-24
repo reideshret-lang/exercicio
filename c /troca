@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int v_numero[5];
+    int i, j, troca;
+    
+    for(i=0;i<5;i++){
+        printf("Digite um numero: ");
+        scanf("%d", &v_numero[i]);
+    }
+    
+    for(i=0; i<4; i++){
+        for(j=0; j<4-i; j++){
+            if(v_numero[j] > v_numero[j+1]){
+                troca = v_numero[j];
+                v_numero[j] = v_numero[j+1];
+                v_numero[j+1] = troca;
+            }
+        }
+    }
+    
+    for(i=0;i<5;i++){
+        printf("%d\n", v_numero[i]);
+    }
+    
+    return 0;
+}
