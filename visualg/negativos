@@ -1,0 +1,25 @@
+Algoritmo "negativos"
+
+Var
+
+  quantidade, i : inteiro
+  v_numero : vetor [0..9] de inteiro
+
+Inicio
+
+     escreva("Quantos numeros voce vai digitar? ")
+     leia(quantidade)
+     
+     para i de 0 ate quantidade - 1 faca
+       escreva("Digite um numero: ")
+       leia(v_numero[i])
+     fimpara
+     
+     escreval("NUMEROS NEGATIVOS: ")
+     para i de 0 ate quantidade - 1 faca
+       se v_numero[i] < 0 entao
+         escreval(v_numero[i])
+       fimse
+     fimpara
+
+Fimalgoritmo
