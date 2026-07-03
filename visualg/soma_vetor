@@ -1,0 +1,35 @@
+Algoritmo "soma_vetor"
+
+Var
+
+  quantidade, i : inteiro
+  v_valor : vetor [0..9] de real
+  media, soma : real
+
+Inicio
+
+   escreva("Quantos numeros voce vai digitar? ")
+   leia(quantidade)
+   
+   para i de 0 ate quantidade - 1 faca
+      escreva("Digite um numero: ")
+      leia(v_valor[i])
+   fimpara
+   
+   escreval
+   escreva("VALORES = ")
+     para i de 0 ate quantidade - 1 faca
+        escreva(v_valor[i]:3:1, " ")
+     fimpara
+     
+   soma <- 0
+   para i de 0 ate quantidade - 1 faca
+     soma <- soma + v_valor[i]
+   fimpara
+   
+   media <- soma / quantidade
+   escreval
+   escreval("SOMA = ", soma:3:2)
+   escreva("MEDIA = ", media:3:2)
+
+Fimalgoritmo
