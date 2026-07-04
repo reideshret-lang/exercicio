@@ -1,0 +1,34 @@
+Algoritmo "aprovados"
+
+Var
+
+    quantidade, i : inteiro
+    v_nome : vetor [0..9] de caractere
+    v_notaum : vetor [0..9] de real
+    v_notadois : vetor [0..9] de real
+    v_media : vetor [0..9] de real
+
+Inicio
+
+    escreva("Quantos alunos serao digitados? ")
+    leia(quantidade)
+    
+    para i de 0 ate quantidade - 1 faca
+      escreval("Digite nome, primeira e segunda nota do", i+1, "o aluno")
+      leia(v_nome[i])
+      leia(v_notaum[i])
+      leia(v_notadois[i])
+    fimpara
+
+    para i de 0 ate quantidade - 1 faca
+       v_media[i] <- (v_notaum[i] + v_notadois[i]) / 2
+    fimpara
+    
+    escreval("Alunos aprovados: ")
+    para i de 0 ate quantidade - 1 faca
+       se v_media[i] >= 6.0 entao
+         escreval(v_nome[i])
+       fimse
+    fimpara
+
+Fimalgoritmo
