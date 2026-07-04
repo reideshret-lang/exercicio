@@ -1,0 +1,33 @@
+Algoritmo "maior_posicao"
+
+Var
+
+  quantidade, i, posicao : inteiro
+  v_numero : vetor [0..9] de real
+  maior : real
+
+Inicio
+
+  escreva("Quantos numeros voce vai digitar? ")
+  leia(quantidade)
+  
+  para i de 0 ate quantidade - 1 faca
+     escreva("Digite um numero: ")
+     leia(v_numero[i])
+  fimpara
+  
+  maior <- 0
+  posicao <- 0
+  
+  para i de 0 ate quantidade - 1 faca
+     se maior < v_numero[i] entao
+       maior <- v_numero[i]
+       posicao <- i
+     fimse
+  fimpara
+  
+  escreval
+  escreval("MAIOR VALOR = ", maior:3:1)
+  escreva("POSICAO DE MAIOR VALOR = ", posicao)
+
+Fimalgoritmo
