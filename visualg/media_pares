@@ -1,0 +1,36 @@
+Algoritmo "media_pares"
+
+Var
+
+  quantidade, i, soma, pares : inteiro
+  v_numero : vetor [0..9] de inteiro
+  media : real
+
+Inicio
+
+  escreva("Quantos elementos vai ter o vetor? ")
+  leia(quantidade)
+  
+  para i de 0 ate quantidade - 1 faca
+     escreva("Digite um numero: ")
+     leia(v_numero[i])
+  fimpara
+  
+  soma <- 0
+  pares <- 0
+  
+  para i de 0 ate quantidade - 1 faca
+    se v_numero[i] % 2 = 0 entao
+      soma <- soma + v_numero[i]
+      pares <- pares + 1
+    fimse
+  fimpara
+  
+  se soma = 0 entao
+    escreva("NENHUM NUMERO PAR")
+  senao
+    media <- soma / pares
+    escreva("MEDIA = ", media:3:1)
+  fimse
+
+Fimalgoritmo
