@@ -53,9 +53,12 @@ Inicio
       fimse
    fimpara
    
-   mediaM <- soma / quantM
-   
-   escreval("Media das alturas das mulheres = ", mediaM:3:2)
+   se soma = 0 entao
+     escreval("Impossivel calcular a media")
+   senao
+      mediaM <- soma / quantM
+      escreval("Media das alturas das mulheres = ", mediaM:3:2)
+   fimse
    escreva("Numero de homens = ", quantH)
 
 Fimalgoritmo
