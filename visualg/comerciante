@@ -1,0 +1,64 @@
+Algoritmo "comerciante"
+
+Var
+
+   quantidade, i, acima, abaixo, entre: inteiro
+   v_nome : vetor [0..9] de caractere
+   v_preco_compra : vetor [0..9] de real
+   v_preco_venda : vetor [0..9] de real
+   somaC, somaV, lucro, lucrot, percentual: real
+
+Inicio
+
+   escreva("Serao digitados quantos produtos? ")
+   leia(quantidade)
+   
+   para i de 0 ate quantidade - 1 faca
+      escreval("PRODUTO", i + 1, ":")
+      escreva("Nome: ")
+      leia(v_nome[i])
+      escreva("Preco de compra: ")
+      leia(v_preco_compra[i])
+      escreva("Preco de venda: ")
+      leia(v_preco_venda[i])
+   fimpara
+   
+   acima <- 0
+   abaixo <- 0
+   entre <- 0
+   lucrot <- 0
+   para i de 0 ate quantidade - 1 faca
+      lucro <- v_preco_venda[i] - v_preco_compra[i]
+      lucrot <- lucrot + lucro
+      percentual <- lucro * 100 / v_preco_compra[i]
+      se percentual < 10 entao
+         abaixo <- abaixo + 1
+      fimse
+      
+      se (percentual >= 10) e (percentual <= 20) entao
+        entre <- entre + 1
+      fimse
+      
+      se percentual > 20 entao
+        acima <- acima + 1
+      fimse
+   fimpara
+   
+   somaC <- 0
+   somaV <- 0
+   para i de 0 ate quantidade - 1 faca
+      somaC <- somaC + v_preco_compra[i]
+      somaV <- somaV + v_preco_venda[i]
+      
+   fimpara
+   
+   escreval
+   escreval("RELATORIO: ")
+   escreval("Lucro abaixo de 10%: ", abaixo)
+   escreval("Lucro entre 10% e 20%: ", entre)
+   escreval("Lucro acima de 20%: ", acima)
+   escreval("Valor total de compra: ", somaC:2:2)
+   escreval("Valor total de venda: ", somaV:2:2)
+   escreva("Lucro total: ", lucrot:2:2)
+
+Fimalgoritmo
