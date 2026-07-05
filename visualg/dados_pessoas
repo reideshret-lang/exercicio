@@ -1,0 +1,61 @@
+Algoritmo "dados_pessoas"
+
+Var
+
+   quantidade, i, quantH, quantM : inteiro
+   v_genero : vetor [0..9] de caractere
+   v_altura : vetor [0..9] de real
+   maior, menor, mediaM, soma : real
+   
+
+Inicio
+
+   escreva("Quantas pessoas serao digitadas? ")
+   leia(quantidade)
+   
+   para i de 0 ate quantidade - 1 faca
+      escreva("Altura da", i + 1,"a pessoa: ")
+      leia(v_altura[i])
+      escreva("Genero da", i + 1,"a pessoa: ")
+      leia(v_genero[i])
+   fimpara
+   
+   maior <- 0
+   para i de 0 ate quantidade - 1 faca
+      se maior < v_altura[i] entao
+         maior <- v_altura[i]
+      fimse
+   fimpara
+   
+   menor <- v_altura[0]
+   para i de 0 ate quantidade - 1 faca
+      se menor > v_altura[i] entao
+         menor <- v_altura[i]
+      fimse
+   fimpara
+   
+   quantM <- 0
+   quantH <- 0
+   para i de 0 ate quantidade - 1 faca
+      se v_genero[i] = "F" entao
+        quantM <- quantM + 1
+      fimse
+
+      se v_genero[i] = "M" entao
+           quantH <- quantH + 1
+      fimse
+   fimpara
+   
+   soma <- 0
+   para i de 0 ate quantidade - 1 faca
+      se v_genero[i] = "F" entao
+        soma <- soma + v_altura[i]
+      fimse
+   fimpara
+   
+   mediaM <- soma / quantM
+   
+   escreval("Media das alturas das mulheres = ", mediaM:3:2)
+   escreva("Numero de homens = ", quantH)
+
+Fimalgoritmo
