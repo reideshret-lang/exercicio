@@ -1,0 +1,46 @@
+Algoritmo "soma_matrizes"
+
+Var
+
+  L, C, i, j : inteiro
+  m_A : vetor [0..9,0..9] de inteiro
+  m_B : vetor [0..9,0..9] de inteiro
+  m_C : vetor [0..9,0..9] de inteiro
+
+Inicio
+
+  escreva("Quantas linhas vai ter cada matriz? ")
+  leia(L)
+  escreva("Quantas colunas vai ter cada matriz? ")
+  leia(C)
+  
+  escreval("Digite os valores da matriz A: ")
+  para i de 0 ate L - 1 faca
+    para j de 0 ate C - 1 faca
+      escreva("Elemento [",i,",",j,"]: ")
+      leia(m_A[i,j])
+    fimpara
+  fimpara
+  
+  escreval("Digite os valores da matriz B: ")
+  para i de 0 ate L - 1 faca
+    para j de 0 ate C - 1 faca
+      escreva("Elemento [",i,",",j,"]: ")
+      leia(m_B[i,j])
+    fimpara
+  fimpara
+  
+  para i de 0 ate L - 1 faca
+    m_C[i,j] <- 0
+    para j de 0 ate C - 1 faca
+      m_C[i,j] <- m_A[i,j] + m_B[i,j]
+    fimpara
+  fimpara
+  
+  escreva("MATRIZ SOMA: ")
+  para i de 0 ate L - 1 faca
+    escreval
+    para j de 0 ate C - 1 faca
+      escreva(m_C[i,j], " ")
+    fimpara
+  fimpara
